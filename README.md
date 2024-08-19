@@ -107,4 +107,4 @@ You can directly run the **`optuna_utility.py`** file to adjust parameters. If t
 
 ## Dataset and model results
 
-This application will open source all trained models and test results, as well as the DIV2K dataset, which you can download here[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13340845.svg)](10.5281/zenodo.13340845).
+This application will open source all trained models and test results, as well as the DIV2K dataset, which you can download here [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13340845.svg)](10.5281/zenodo.13340845).
