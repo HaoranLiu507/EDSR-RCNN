@@ -11,7 +11,7 @@ Haoran Liu, Kaimin Wang, Mingzhe Liu, Xue Zuo, Peng Li, and Ruili Wang "Super-Re
 ![](README.png)
 
 
-This project is based on the EDSR project“ https://github.com/sanghyun-son/EDSR-PyTorch ”The specific structure and functional implementation of the EDSR model developed can be found in the article:
+This project is based on the EDSR project "https://github.com/sanghyun-son/EDSR-PyTorch" The specific structure and functional implementation of the EDSR model developed can be found in the article:
 
 [1] Bee Lim,  Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee,  "Enhanced Deep Residual Networks for Single Image Super-Resolution," 2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017. 
 
@@ -96,7 +96,7 @@ This project is based on the EDSR project“ https://github.com/sanghyun-son/EDS
    ``` 
 5. You can find the result images from **`experiment/test/results/your_path`**.
 ## Optuna parameter tuning
-Optuna is an open-source automated hyperparameter optimization framework designed to help developers and researchers efficiently tune the hyperparameters of machine learning models[2]. It offers a simple yet powerful way to find the best combinations of hyperparameters, thereby enhancing model performance.
+Optuna is an open-source automated hyperparameter optimization framework designed to help developers and researchers efficiently tune the hyperparameters of machine learning models [2]. It offers a simple yet powerful way to find the best combinations of hyperparameters, thereby enhancing model performance.
 
 You can directly run the **`optuna_utility.py`** file to adjust parameters. If there are other parameters that need to be adjusted, they can be specified in the **`objective`** function, taking the learning rate as an example.
    ```bash
@@ -107,4 +107,4 @@ You can directly run the **`optuna_utility.py`** file to adjust parameters. If t
 
 ## Dataset and model results
 
-This application will open source all trained models and test results, as well as the DIV2K dataset, which you can download here [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13340845.svg)](10.5281/zenodo.13340845).
+This application will open source all trained models and test results, as well as the DIV2K dataset, which you can download here[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13340845.svg)](10.5281/zenodo.13340845).
