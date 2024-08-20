@@ -34,6 +34,10 @@ This project is based on the EDSR project "https://github.com/sanghyun-son/EDSR-
 
 * cv2 >= 3.xx (Only if you want to use video input/output)
 
+* optuna
+
+* optuna-dashboard
+
 ## Code:
    You can directly run the **`demo.sh`** in the src folder or use terminal commands to conduct experiments.
    
