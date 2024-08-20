@@ -9,7 +9,7 @@
 #python main.py --model EDSR --scale 4 --save edsr_baseline_x4 --reset --pre_train [pre-trained EDSR_baseline_x2 model dir]
 
 # EDSR in the paper (x2)
-# python main.py --model EDSR --scale 2 --data_range 1-790/791-800 --save 2023.07.06_DIV2Kgray_R32_RS0.1_F100_E300_LR1e-4_Gamma_0.5_SmoothL1Loss_PSNR --n_colors 1 --n_resblocks 32 --res_scale 0.1  --loss 1*SmoothL1Loss --decay 100-200 --n_threads 24 --seed 7 --reset --lr 1e-4 --n_feats 100
+python main.py --model EDSR --scale 2 --data_range 1-790/791-800 --save EDSRTEST --n_resblocks 32 --res_scale 0.1 --loss 1*SmoothL1Loss --decay 100-200 --n_threads 24 --seed 7 --reset --lr 1e-4 --n_feats 100
 # python main.py --model EDSR --scale 2 --data_range 1-790/791-800 --save 2023.07.06_DIV2Kgray_R32_RS0.1_F100_E300_LR1e-4_Gamma_0.5_SmoothL1Loss_PSNRc --n_colors 1 --n_resblocks 32 --res_scale 0.1  --loss 1*SmoothL1Loss --decay 100-200 --n_threads 24 --seed 7 --lr 1e-4 --n_feats 100 --pre_train '/home/6c702main/edsror/experiment/2023.07.06_DIV2Kgray_R32_RS0.1_F100_E300_LR1e-4_Gamma_0.5_SmoothL1Loss_PSNR/model/model_latest.pt'
 # EDSR in the paper (x3) - from EDSR (x2)
 #python main.py --model EDSR --scale 3 --save edsr_x3 --n_resblocks 32 --n_feats 256 --res_scale 0.1 --reset --pre_train [pre-trained EDSR model dir]-

@@ -117,7 +117,7 @@ parser.add_argument('--n_resgroups', type=int, default=10,
 parser.add_argument('--reduction', type=int, default=16,
                     help='number of feature maps reduction')
 # RCNN param
-parser.add_argument('--RCNN_channel', type=str, default="on",
+parser.add_argument('--RCNN_channel', type=str, default="off",
                     help='add RCNN channel into the training dataset.')
 
 parser.add_argument('--resize',  type=str, default="off",
