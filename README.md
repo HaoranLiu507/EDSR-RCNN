@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project presents an implementation of the EDSR-RCNN model, a deep learning approach that demonstrates strong super-resolution reconstruction performance. The model utilizes the Random-coupled Neural Network (RCNN) [1] to effectively extract mid to high-scale feature information from images without the necessity of complex training procedures or expensive deep neural architectures. By incorporating these spatiotemporal features, the EDSR-RCNN model enhances the convolutional kernel scale of the Enhanced Deep Residual Network(EDSR) [2], enabling the acquisition of richer image features.
+This project implements the EDSR-RCNN model, a deep learning approach that exhibits strong performance in super-resolution reconstruction. The model employs the Random-coupled Neural Network (RCNN) [1] to efficiently extract mid- to high-scale feature information from images, eliminating the need for complex training procedures or costly deep neural architectures. By integrating these spatiotemporal features, the EDSR-RCNN model enhances the convolutional kernel scale of the Enhanced Deep Residual Network (EDSR) [2], thereby facilitating the extraction of more intricate image features.
 
 If you find our work useful in your research or publication, please cite our work:
 
@@ -46,28 +46,21 @@ This project is based on the EDSR project "https://github.com/sanghyun-son/EDSR-
 
 ## How to train and test EDSR-RCNN： 
 
-   Because we use the DIV2K dataset to train and test our model, please download the dataset from the links provided in the dataset and model results section at the end.
-   There are several points to pay attention to during the training and testing process.
-   
-   * you need to set the **`--dir_data`** in **`option.py`** to the path where the DIV2K dataset is located. If there are specific requirements for storing the dataset, you need to modify the **`--dir_data`** to the specified path.
+* As we employ the DIV2K dataset for training and testing our model, please download the dataset from the links available in the dataset and model results section at the end of this document. Several important considerations must be taken into account during the training and testing processes:
 
+* Set the **`--dir_data`** parameter in **`option.py`** to the path where the DIV2K dataset is located. If there are specific requirements for storing the dataset, modify the **`--dir_data`** setting to reflect the specified path.
 
-   * If you want to train the model on other datasets, you need to adjust **`--data_train`** and **`--data_test`** to the name of that dataset.
+* To train the model on alternate datasets, adjust **`--data_train`** and **`--data_test`** to correspond with the names of those datasets.
 
+* If you intend to continue training from a pre-trained model, set **`--pre_train`** to the path of that model.
 
-   * If you want to continue training process on the pre-trained model, you need to set **`--pre_train`** as the path of the model.
+* The RCNN channel of the model is enabled by default. To train the original EDSR model, set **`--RCNN_channe`** to off.
 
+* To test a trained model exclusively, add **`--test_only`**.
 
-   * The RCNN channel of the model is enabled by default. If you want to train the original EDSR model, set **`--RCNN_channe`** to **`off`**.
+* For adjusting relevant parameters of the EDSR model, specify them before running **`demo.sh`**.
 
-
-   * If you only want to test on a trained model, you need to add **`--test_only`**.
-
-
-   * If you want to adjust the relevant parameters of the EDSR model, you only need to specify them before running **`demo.sh`**.
-
-
-   * We have adjusted a set of RCNN model parameters applicable to the DIV2K dataset, so the parameters of the RCNN model need not be adjusted. If you want to train the EDSR-RCNN model on other datasets, please adjust the RCNN model parameters in advance.
+* We have pre-optimized a set of RCNN model parameters suitable for the DIV2K dataset; therefore, these parameters do not require modification. If you intend to train the EDSR-RCNN model on different datasets, please adjust the RCNN model parameters accordingly beforehand.
 ## Usage
 1. You should first construct the dataset folder according to a specific structure.
    ```
@@ -107,4 +100,4 @@ You can directly run the **`optuna_utility.py`** file to adjust parameters. If t
 
 ## Dataset and model results
 
-This application will open source all trained models and test results, as well as the DIV2K dataset, which you can download here[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13340845.svg)](10.5281/zenodo.13340845).
+This application will open source all trained models and test results, as well as the DIV2K dataset, which you can download here [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13340845.svg)](https://doi.org/10.5281/zenodo.13340845).
