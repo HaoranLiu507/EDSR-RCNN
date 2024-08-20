@@ -34,6 +34,8 @@ This project is based on the EDSR project "https://github.com/sanghyun-son/EDSR-
 
 * cv2 >= 3.xx (Only if you want to use video input/output)
 
+* ptflops
+
 * optuna
 
 * optuna-dashboard
