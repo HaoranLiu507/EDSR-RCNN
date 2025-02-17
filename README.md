@@ -14,6 +14,7 @@ Haoran Liu, Kaimin Wang, Mingzhe Liu, Xue Zuo, Peng Li, and Ruili Wang "Super-Re
 This project is based on the EDSR project "https://github.com/sanghyun-son/EDSR-PyTorch" The specific structure and functional implementation of the EDSR model developed can be found in the article:
 
 [1] Liu H, Xiang M, Liu M, Li P, Zuo X, Jiang X, Zuo Z. Random-coupled Neural Network. Electronics. 2024 Oct 31;13(21):4297.
+
 [2] Bee Lim,  Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee,  "Enhanced Deep Residual Networks for Single Image Super-Resolution," 2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017. 
 
 ## Dependencies
