@@ -8,7 +8,7 @@ If you find our work useful in your research or publication, please cite our wor
 
 Haoran Liu, Kaimin Wang, Mingzhe Liu, Xue Zuo, Peng Li, and Ruili Wang "Super-Resolution Image Reconstruction based on Random-coupled Neural Network and EDSR." Not published yet. 
 
-![](README.png)
+![alt text](./README.png)
 
 
 This project is based on the EDSR project "https://github.com/sanghyun-son/EDSR-PyTorch" The specific structure and functional implementation of the EDSR model developed can be found in the article:
