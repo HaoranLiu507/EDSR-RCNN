@@ -6,7 +6,7 @@ This project implements the EDSR-RCNN model, a deep learning approach that exhib
 
 If you find our work useful in your research or publication, please cite our work:
 
-Haoran Liu, Kaimin Wang, Mingzhe Liu, Xue Zuo, Peng Li, and Ruili Wang "Super-Resolution Image Reconstruction based on Random-coupled Neural Network and EDSR." Not published yet. 
+Zuo, X., Liu, H., Liu, M. et al. Super-Resolution Image Reconstruction based on Random-coupled Neural Network and EDSR. SIViP 19, 803 (2025). https://doi.org/10.1007/s11760-025-04185-6
 
 ![](./README.png)
 
