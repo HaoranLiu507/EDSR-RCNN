@@ -78,7 +78,8 @@ parser.add_argument('--model', default='EDSR',
 parser.add_argument('--cuda', default='cuda:0',
                     help='which GPU to use')
 parser.add_argument('--model_head', default='Convolution',
-                    help='model head,optional: AdaptiveSKFusion,AdaptiveAttentionFusion')
+                    choices=('adaptive', 'SKFusion', 'Convolution'),
+                    help='model head. options: adaptive, SKFusion, Convolution. Use adaptive or SKFusion when --RCNN_channel on; do not use Convolution in that case.')
 
 parser.add_argument('--act', type=str, default='relu',
                     help='activation function')

@@ -109,7 +109,6 @@ class Trainer():
     def test(self):
         torch.set_grad_enabled(False)
         epoch = self.optimizer.get_last_epoch() + 1
-        torch.save(self.model.state_dict(), '/data/project/3DEDSR/MODEL/model_{}.pt'.format(epoch))
         epoch = self.optimizer.get_last_epoch()
         self.ckp.write_log('\nEvaluation:')
         self.ckp.add_log(
